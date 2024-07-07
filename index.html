@@ -32,11 +32,13 @@
         <form>
           <header class="form-header">
             <h3>Mortgage Calculator</h3>
-            <button class="clear-btn">clear all</button>
+            <input type="reset" class="clear-btn" value="clear all" />
           </header>
           <!-- mortgage amount -->
           <div class="form-row">
-            <label for="mortgageAmount">mortgage amount</label>
+            <label class="form-label" for="mortgageAmount"
+              >mortgage amount</label
+            >
             <div class="input-container">
               <span class="input-units">&euro;</span>
               <input
@@ -50,23 +52,22 @@
           </div>
           <!-- mortgage term -->
           <div class="form-row">
-            <label for="mortgageTerm">mortgage term</label>
+            <label class="form-label" for="mortgageTerm">mortgage term</label>
             <div class="input-container">
-              <span class="input-units">years</span>
               <input
                 type="number"
                 class="form-input"
                 name="mortgageTerm"
                 id="mortgageTerm"
               />
+              <span class="input-units">years</span>
             </div>
             <p class="error-message">This field is required</p>
           </div>
           <!-- interest rate -->
           <div class="form-row">
-            <label for="interestRate">interest rate</label>
+            <label class="form-label" for="interestRate">interest rate</label>
             <div class="input-container">
-              <span class="input-units">%</span>
               <input
                 type="number"
                 step="0.01"
@@ -74,20 +75,31 @@
                 name="interestRate"
                 id="interestRate"
               />
+              <span class="input-units">%</span>
             </div>
             <p class="error-message">This field is required</p>
           </div>
           <!-- mortgage type -->
           <div class="form-row">
-            <label for="mortgageType">mortgage type</label>
+            <label class="form-label" for="mortgageType">mortgage type</label>
             <div class="input-container">
               <div class="radio-container">
-                <input type="radio" name="mortgageType" id="mortgageType" />
-                repayment
+                <input
+                  class="form-radio"
+                  type="radio"
+                  name="mortgageType"
+                  id="mortgageType"
+                />
+                <label for="">repayment</label>
               </div>
               <div class="radio-container">
-                <input type="radio" name="mortgageType" id="mortgageType" />
-                interest only
+                <input
+                  class="form-radio"
+                  type="radio"
+                  name="mortgageType"
+                  id="mortgageType"
+                />
+                <label for="">interest only</label>
               </div>
             </div>
             <p class="error-message">This field is required</p>
@@ -99,7 +111,7 @@
         </form>
         <!-- RESULTS -->
         <!-- Empty results start -->
-        <section class="results empty">
+        <section class="results empty show-results">
           <img src="./assets/images/illustration-empty.svg" alt="" />
           <h3>Results shown here</h3>
           <p>
@@ -109,7 +121,7 @@
         </section>
         <!-- Empty results end -->
         <!-- Completed results start -->
-        <section class="results completed">
+        <section class="results completed hide-results">
           <h3>Your results</h3>
           <p>
             Your results are shown below based on the information you provided.
@@ -118,10 +130,10 @@
           </p>
           <div class="results-card">
             <p class="">Your monthly repayments</p>
-            <span class="monthly-repayment"></span>
+            <span class="monthly-repayment">&euro;</span>
             <hr />
             <p class="">Total you'll repay over the term</p>
-            <span class="total-repayment"></span>
+            <span class="total-repayment">&euro;</span>
           </div>
         </section>
         <!-- Completed results end -->
