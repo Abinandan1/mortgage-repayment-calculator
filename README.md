@@ -151,6 +151,7 @@ Since this challenge demanded "units" element for each input element (like Mortg
 Adding commas to the amount value was interesting and here is the image and code for that.
 
 - Commas
+
   ![](./solution-images/abinandan-add-commas.PNG)
 
 ```js
