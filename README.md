@@ -28,30 +28,39 @@ Users should be able to:
 ### Screenshot
 
 - Desktop Design Completed
+
   ![](./solution-images/abinandan-desktop-design-completed.png)
 
 - Desktop Design Empty
+
   ![](./solution-images/abinandan-desktop-design-empty.png)
 
 - Tablet Design Completed
+
   ![](./solution-images/abinandan-tablet-design-completed.png)
 
 - Tablet Design Empty
+
   ![](./solution-images/abinandan-tablet-design-empty.png)
 
 - Mobile Design Completed
+
   ![](./solution-images/abinandan-mobile-design-completed.png)
 
 - Mobile Design Empty
+
   ![](./solution-images/abinandan-mobile-design-empty.png)
 
 - Active States
+
   ![](./solution-images/abinandan-active-states.png)
 
 - Error States
+
   ![](./solution-images/abinandan-error-states.png)
 
 - Hover States
+
   ![](./solution-images/abinandan-hover-states-1.png)
   ![](./solution-images/abinandan-hover-states-2.png)
   ![](./solution-images/abinandan-hover-states-3.png)
@@ -76,12 +85,15 @@ Users should be able to:
 Since this challenge demanded "units" element for each input element (like Mortgage Amount, etc.), the design of input element was a bit challenging. Below are the images of the input element along with units followed by the css code that I wrote for styling the units.
 
 - Normal Input
+
   ![](./solution-images/abinandan-input-units-normal.PNG)
 
 - Error Input
+
   ![](./solution-images/abinandan-input-units-error.PNG)
 
 - Active Input
+
   ![](./solution-images/abinandan-input-units-active.PNG)
 
 ```css
